@@ -35,9 +35,9 @@ else
 fi  
 
 mkdir -p inventory
-wget https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.py inventory/ec2.py
+wget -P inventory/ https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.py ec2.py
 chmod 750 inventory/ec2.py
-#wget https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.ini inventory/ec2.ini
+#wget -P inventory/ https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.ini 
 
 
 mkdir -p private
